@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Menu</title>
-</head>
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
 <body>
 <ul>
     {% for item in menu %}
@@ -11,4 +9,4 @@
     {% endfor %}
 </ul>
 </body>
-</html>
+{% endblock %}}

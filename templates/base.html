@@ -2,20 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main page</title>
+    <title>{{ title }}</title>
 </head>
 <body>
-<!--{% block content -%)-->
-<h1>{{ text }}</h1>
-{% if main_string %}
-<h2>
-    String with {{ main_string }}!
-</h2>
-{% else %}
-<h2>
-    String without main_string!
-</h2>
-{% endif %}
-<!--{% endblock -%}-->
+{% block content %}
+<h1>-------It is the base.html block!-----</h1>
+{% endblock %}
 </body>
 </html>
