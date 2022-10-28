@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+{% if username %}
+<h2>User have the name: {{ username }}</h2>
+{% else %}
+<h2>
+    User without name!
+</h2>
+{% endif %}
+{% endblock %}
