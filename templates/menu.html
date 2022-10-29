@@ -3,10 +3,14 @@
 {% block content %}
 {{ super() }}
 <body>
+<p>The start MENU zone!</p>
 <ul>
     {% for item in menu %}
-    <li>{{ item }}</li>
+    <li>
+        <a href="{{ item.url }}">{{ item.name }}</a>
+    </li>
     {% endfor %}
 </ul>
+<p>The end of MENU zone!</p>
 </body>
 {% endblock %}}
